@@ -1,0 +1,94 @@
+#+SETUPFILE: theme-readtheorg.setup
+#+AUTHOR: Fernando Briano
+#+TITLE: Spacemacs org-mode file in org-mode
+
+* Modes Stuff
+*Golden ratio* - Automatic resizing of Emacs windows to the golden ratio
+* Functions
+
+"Open with", open file in buffer with external app
+Source: http://emacsredux.com/blog/2013/03/27/open-file-in-external-program/
+#+BEGIN_SRC elisp
+(defun open-with (arg)
+  "Open visited file in default external program.
+
+With a prefix ARG always prompt for command to use."
+  (interactive "P")
+  (when buffer-file-name
+    (shell-command (concat
+                    (cond
+                     ((and (not arg) (eq system-type 'darwin)) "open")
+                     ((and (not arg) (member system-type '(gnu gnu/linux gnu/kfreebsd))) "xdg-open")
+                     (t (read-shell-command "Open current file with: ")))
+                    " "
+                    (shell-quote-argument buffer-file-name)))))
+(global-set-key (kbd "C-c o") 'open-with)
+
+#+END_SRC
+
+* Org Mode
+Write "<s" and press Tab to start a source code block.
+
+ - /italicised text/
+ - *bold text*
+ - _underlines_
+ - =literal text=
+ - ~code~
+
+* Keyboard shortcuts
+- ~SPC p t~ show *neotree*
+- Kill buffers in Helm Buffer - ~C-x b~ shows helm buffer, select buffers to kill with ~Ctrl-SPC~, kill them with ~M-D~.
+** Magit
+- ~C-x g~ or ~SPC g s~ - magit status
+- ~N~ and ~P~ move around next and previous, ~TAB~ expands/collapses code folds.
+- ~s~ stage
+- ~u~ unstage
+- ~Ctrl - SPC~ select region to stage/unstage. Works for lines of code and files
+- ~c~ commit panel with lots of options, ~c~ again takes you to commit message
+- ~C-c C-k~ while writing a commit message discards commit message
+- ~f a~ fetch all (~f~ takes you to fetching panel)
+- ~b c~ checkout branch (~b~ for branch panel)
+- ~r e~ rebase "elsewhere" (~r~ for rebase panel)
+- ~r i~ rebase interactive
+
+** Alchemist
+~C-c a~ is the prefix for Alchemist shortcuts. So start with ~C-c a~ and then:
+
+| Key combination | Description                                  |
+|-----------------+----------------------------------------------|
+| ~m c~           | mix compile                                  |
+| ~a x~           | mix                                          |
+| ~a c b~         | compile this buffer                          |
+| ~a c f~         | compile a file                               |
+| ~a m r~         | mix run (a file in the context of a project) |
+
+*** Testing
+| Key combination | Description                       |
+|-----------------+-----------------------------------|
+| ~a p s~         | toggle file and its test file     |
+| ~a p o~         | same as ↑ but in different window |
+| ~a p t~         | run tests for current file        |
+| ~a t~           | mix test                          |
+| ~a r~           | rerun last test                   |
+| ~a m t b~       | run tests on current buffer       |
+| ~a m t~         | run tests under cursor            |
+
+** Projectile
+p I - invalidate cache
+* Lightning talk
+
+** DONE Hierarchical content
+   CLOSED: [2017-10-13 Fri 16:57]
+** DONE TO-DO's
+   CLOSED: [2017-10-13 Fri 16:57]
+** DONE Format: Bold, italic, etc
+   CLOSED: [2017-10-13 Fri 16:57]
+** DONE Source code
+   CLOSED: [2017-10-13 Fri 16:58]
+** DONE Tables
+   CLOSED: [2017-10-13 Fri 16:58]
+** DONE Export to HTML
+   CLOSED: [2017-10-13 Fri 17:00]
+** DONE HTML templates
+   CLOSED: [2017-10-13 Fri 17:00]
+
