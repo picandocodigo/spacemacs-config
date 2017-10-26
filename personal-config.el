@@ -38,6 +38,7 @@
 (global-set-key (kbd "C-c o") 'open-with)
 
 ;;; Org-mode
+;;; Export org files to html on save:
 (defun org-html-export-on-save ()
   (interactive)
   (if (memq 'org-html-export-to-html after-save-hook)
@@ -62,7 +63,6 @@
 ;;  '((ruby . t)
 ;;    )
 ;;  )
-
 
 (provide 'personal-config)
 ;;; personal-config.el ends here
