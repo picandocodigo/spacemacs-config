@@ -42,6 +42,7 @@ Spacemacs uses a leader key to bind almost all its key bindings. In Vim mode, th
 | ~SPC p t~       | Show neotree                                                                                                           |
 | ~C-x b~         | Kill buffers in Helm Buffer - ~C-x b~ shows helm buffer, select buffers to kill with ~Ctrl-SPC~, kill them with ~M-D~. |
 | ~SPC f D~       | delete a file and associated buffer                                                                                    |
+| ~M-m f R~       | Rename current file                                                                                                    |
 
 ** Magit
 | Key combination      | Description                                                              |
