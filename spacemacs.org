@@ -36,20 +36,29 @@ Write "<s" and press Tab to start a source code block.
  - ~code~
 
 * Keyboard shortcuts
-- ~SPC p t~ show *neotree*
-- Kill buffers in Helm Buffer - ~C-x b~ shows helm buffer, select buffers to kill with ~Ctrl-SPC~, kill them with ~M-D~.
+Spacemacs uses a leader key to bind almost all its key bindings. In Vim mode, the leader key is set on ~SPC~ (the space bar, hence the name spacemacs).In Emacs style the leader is available on ~M-m~. So shortcuts with ~SPC~ can be executed with ~M-m~ in Emacs mode.
+| Key combination | Description                                                                                                            |
+|-----------------+------------------------------------------------------------------------------------------------------------------------|
+| ~SPC p t~       | Show neotree                                                                                                           |
+| ~C-x b~         | Kill buffers in Helm Buffer - ~C-x b~ shows helm buffer, select buffers to kill with ~Ctrl-SPC~, kill them with ~M-D~. |
+| ~SPC f D~       | delete a file and associated buffer                                                                                    |
+
 ** Magit
-- ~C-x g~ or ~SPC g s~ - magit status
-- ~N~ and ~P~ move around next and previous, ~TAB~ expands/collapses code folds.
-- ~s~ stage
-- ~u~ unstage
-- ~Ctrl - SPC~ select region to stage/unstage. Works for lines of code and files
-- ~c~ commit panel with lots of options, ~c~ again takes you to commit message
-- ~C-c C-k~ while writing a commit message discards commit message
-- ~f a~ fetch all (~f~ takes you to fetching panel)
-- ~b c~ checkout branch (~b~ for branch panel)
-- ~r e~ rebase "elsewhere" (~r~ for rebase panel)
-- ~r i~ rebase interactive
+| Key combination      | Description                                                              |
+|----------------------+--------------------------------------------------------------------------|
+| ~C-x g~ or ~SPC g s~ | *magit status*                                                           |
+| ~N~ and ~P~          | move around next and previous                                            |
+| ~TAB~                | expands/collapses code folds                                             |
+| ~s~                  | stage                                                                    |
+| ~u~                  | unstage                                                                  |
+| ~Ctrl - SPC~         | select region to stage/unstage. Works for lines of code and files        |
+| ~c~                  | commit panel with lots of options, ~c~ again takes you to commit message |
+| ~C-c C-k~            | while writing a commit message discards commit message                   |
+| ~f a~                | fetch all (~f~ takes you to fetching panel)                              |
+| ~b c~                | checkout branch (~b~ for branch panel)                                   |
+| ~r e~                | rebase "elsewhere" (~r~ for rebase panel)                                |
+| ~r i~                | rebase interactive                                                       |
+
 
 ** Alchemist
 ~C-c a~ is the prefix for Alchemist shortcuts. So start with ~C-c a~ and then:
@@ -74,7 +83,10 @@ Write "<s" and press Tab to start a source code block.
 | ~a m t~         | run tests under cursor            |
 
 ** Projectile
-p I - invalidate cache
+| Key combination | Description      |
+|-----------------+------------------|
+| ~p I~           | Invalidate cache |
+
 * Lightning talk
 
 ** DONE Hierarchical content
