@@ -33,6 +33,7 @@
   '(
     emojify
     gruvbox-theme
+    fireplace
     )
   "The list of Lisp packages required by the personal-config layer.
 

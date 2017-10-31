@@ -1,7 +1,7 @@
-#+TITLE: fernando layer
+#+TITLE: Fernando Briano's personal-config layer for Spacemacs
 
 # The maximum height of the logo should be 200 pixels.
-[[img/fernando.png]]
+# [[img/fernando.png]]
 
 # TOC links should be GitHub style anchors.
 * Table of Contents                                        :TOC_4_gh:noexport:
@@ -11,24 +11,25 @@
 - [[#key-bindings][Key bindings]]
 
 * Description
-This layer adds support for something.
+This layer adds support for some custom stuff on top of Cultivate's shared config.
 
 ** Features:
-  - Autocomplete
-  - Lint
-  - Refactor
-  - ...
+  - Emojify
+  - Fireplace
+  - Theme
 
 * Install
 To use this configuration layer, add it to your =~/.spacemacs=. You will need to
-add =fernando= to the existing =dotspacemacs-configuration-layers= list in this
+add =personal-config= to the existing =dotspacemacs-configuration-layers= list in this
 file.
 
 * Key bindings
 
-| Key Binding | Description    |
-|-------------+----------------|
-| ~SPC x x x~ | Does thing01   |
+| Key Binding | Description               |
+|-------------+---------------------------|
+| ~C-h~       | Delete backward character |
+| ~M-h~       | Kill backward word        |
+
 
 # Use GitHub URLs if you wish to link a Spacemacs documentation file or its heading.
 # Examples:
