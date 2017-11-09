@@ -64,4 +64,5 @@ Each entry is either:
 
 (defun personal-config/init-emojify())
 (defun personal-config/init-gruvbox-theme())
+(defun personal-config/init-fireplace())
 ;;; packages.el ends here
