@@ -13,4 +13,6 @@
 
 ;;; THEME
 (spacemacs/load-theme 'gruvbox)
-(load-theme 'gruvbox-dark-medium)
+
+
+

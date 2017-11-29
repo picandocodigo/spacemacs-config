@@ -57,9 +57,16 @@ Spacemacs uses a leader key to bind almost all its key bindings. In Vim mode, th
 | ~C-c C-k~            | while writing a commit message discards commit message                   |
 | ~f a~                | fetch all (~f~ takes you to fetching panel)                              |
 | ~b c~                | checkout branch (~b~ for branch panel)                                   |
+| ~F~                  | *pull* popup                                                             |
+| ~X~                  | *reset*                                                                  |
 | ~r e~                | rebase "elsewhere" (~r~ for rebase panel)                                |
 | ~r i~                | rebase interactive                                                       |
-
+|----------------------+--------------------------------------------------------------------------|
+| Rebase interactive   |                                                                          |
+|----------------------+--------------------------------------------------------------------------|
+| ~M-n~ and ~M-p~      | Move commits up/down                                                     |
+| ~k~                  | Remove commit                                                            |
+|                      |                                                                          |
 
 ** Alchemist
 ~C-c a~ is the prefix for Alchemist shortcuts. So start with ~C-c a~ and then:
