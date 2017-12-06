@@ -52,6 +52,7 @@ Spacemacs uses a leader key to bind almost all its key bindings. In Vim mode, th
 | ~TAB~                | expands/collapses code folds                                             |
 | ~s~                  | stage                                                                    |
 | ~u~                  | unstage                                                                  |
+| ~k~                  | discard region                                                           |
 | ~Ctrl - SPC~         | select region to stage/unstage. Works for lines of code and files        |
 | ~c~                  | commit panel with lots of options, ~c~ again takes you to commit message |
 | ~C-c C-k~            | while writing a commit message discards commit message                   |
@@ -67,6 +68,20 @@ Spacemacs uses a leader key to bind almost all its key bindings. In Vim mode, th
 | ~M-n~ and ~M-p~      | Move commits up/down                                                     |
 | ~k~                  | Remove commit                                                            |
 |                      |                                                                          |
+
+** Flycheck
+| Key binding | Description                                                  |
+|-------------+--------------------------------------------------------------|
+| ~e c~       | clear errors                                                 |
+| ~e h~       |   describe flycheck checker                                  |
+| ~e l~       | display a list of all the errors                             |
+| ~e L~       | display a list of all the errors and focus the errors buffer |
+| ~e e~       | explain the error at point                                   |
+| ~e s~       | set flycheck checker                                         |
+| ~e S~       | set flycheck checker executable                              |
+| ~e v~       | verify flycheck setup                                        |
+| ~t s~       | toggle flycheck                                              |
+
 
 ** Alchemist
 ~C-c a~ is the prefix for Alchemist shortcuts. So start with ~C-c a~ and then:
@@ -111,4 +126,3 @@ Spacemacs uses a leader key to bind almost all its key bindings. In Vim mode, th
    CLOSED: [2017-10-13 Fri 17:00]
 ** DONE HTML templates
    CLOSED: [2017-10-13 Fri 17:00]
-
