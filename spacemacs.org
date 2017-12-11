@@ -43,6 +43,8 @@ Spacemacs uses a leader key to bind almost all its key bindings. In Vim mode, th
 | ~C-x b~         | Kill buffers in Helm Buffer - ~C-x b~ shows helm buffer, select buffers to kill with ~Ctrl-SPC~, kill them with ~M-D~. |
 | ~SPC f D~       | delete a file and associated buffer                                                                                    |
 | ~M-m f R~       | Rename current file                                                                                                    |
+| ~C->~           | Multi line cursor add next line                                                                                        |
+| ~C-<~           | Multi line cursor add previous line                                                                                    |
 
 ** Magit
 | Key combination      | Description                                                              |
@@ -106,23 +108,10 @@ Spacemacs uses a leader key to bind almost all its key bindings. In Vim mode, th
 | ~a m t~         | run tests under cursor            |
 
 ** Projectile
-| Key combination | Description      |
-|-----------------+------------------|
-| ~p I~           | Invalidate cache |
-
-* Lightning talk
-
-** DONE Hierarchical content
-   CLOSED: [2017-10-13 Fri 16:57]
-** DONE TO-DO's
-   CLOSED: [2017-10-13 Fri 16:57]
-** DONE Format: Bold, italic, etc
-   CLOSED: [2017-10-13 Fri 16:57]
-** DONE Source code
-   CLOSED: [2017-10-13 Fri 16:58]
-** DONE Tables
-   CLOSED: [2017-10-13 Fri 16:58]
-** DONE Export to HTML
-   CLOSED: [2017-10-13 Fri 17:00]
-** DONE HTML templates
-   CLOSED: [2017-10-13 Fri 17:00]
+| Key combination | Description               |
+|-----------------+---------------------------|
+| ~p I~           | Invalidate cache          |
+| ~s a p~         | Find pattern (in project) |
+| ~p f~           | Find file (in project)    |
+| ~p p~           | Open project              |
+| ~p R~           | Replace in project        |
