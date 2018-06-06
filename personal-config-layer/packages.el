@@ -34,6 +34,7 @@
     emojify
     gruvbox-theme
     fireplace
+    editorconfig
     )
   "The list of Lisp packages required by the personal-config layer.
 
@@ -65,4 +66,5 @@ Each entry is either:
 (defun personal-config/init-emojify())
 (defun personal-config/init-gruvbox-theme())
 (defun personal-config/init-fireplace())
+(defun personal-config/init-editorconfig())
 ;;; packages.el ends here

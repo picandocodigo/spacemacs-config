@@ -1,12 +1,12 @@
 #+SETUPFILE: theme-readtheorg.setup
 #+AUTHOR: Fernando Briano
-#+TITLE: Spacemacs org-mode file in org-mode
+#+TITLE: Spacemacs Notes
 
 * Modes Stuff
 *Golden ratio* - Automatic resizing of Emacs windows to the golden ratio
 * Functions
 
-"Open with", open file in buffer with external app
+"Open with", open file in buffer with external app.
 Source: http://emacsredux.com/blog/2013/03/27/open-file-in-external-program/
 #+BEGIN_SRC elisp
 (defun open-with (arg)
@@ -45,6 +45,17 @@ Spacemacs uses a leader key to bind almost all its key bindings. In Vim mode, th
 | ~M-m f R~       | Rename current file                                                                                                    |
 | ~C->~           | Multi line cursor add next line                                                                                        |
 | ~C-<~           | Multi line cursor add previous line                                                                                    |
+
+** Emacs shortcuts
+| Keys    | Description |
+|---------+-------------|
+| ~M-g g~ | Go to line  |
+
+** Spacemacs shortcuts
+| Keys  | Description                     |
+|-------+---------------------------------|
+| ~f y~ | Show and copy current file path |
+| ~f r~ | Recent files                    |
 
 ** Magit
 | Key combination      | Description                                                              |
@@ -115,3 +126,7 @@ Spacemacs uses a leader key to bind almost all its key bindings. In Vim mode, th
 | ~p f~           | Find file (in project)    |
 | ~p p~           | Open project              |
 | ~p R~           | Replace in project        |
+* Emacs functions
+~describe-variable~ - See the value of a variable
+
+~describe-mode~ - See all enabled minor modes

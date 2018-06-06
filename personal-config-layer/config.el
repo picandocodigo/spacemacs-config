@@ -12,7 +12,13 @@
 (add-hook 'org-mode-hook 'visual-line-mode)
 
 ;;; THEME
-(spacemacs/load-theme 'gruvbox)
+(spacemacs/load-theme 'wombat)
+(setq auto-window-vscroll nil)
+
+(setq ruby-insert-encoding-magic-comment nil)
+(setq enh-ruby-add-encoding-comment-on-save nil)
 
 
 
+;; Go
+(setq gofmt-command "goimports")

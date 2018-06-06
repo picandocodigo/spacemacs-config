@@ -2,3 +2,5 @@
 (configuration-layer/declare-layer 'docker)
 (configuration-layer/declare-layer 'php)
 (configuration-layer/declare-layer 'python)
+(configuration-layer/declare-layer 'ruby-on-rails)
+(configuration-layer/declare-layer 'go)

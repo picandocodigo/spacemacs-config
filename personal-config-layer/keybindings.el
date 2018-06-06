@@ -14,3 +14,6 @@
 ;; Duplicate line
 (global-set-key (kbd "C-c d") 'duplicate-line)
 
+;; Kill
+(global-set-key (kbd "C-c q") 'delete-frame)
+
