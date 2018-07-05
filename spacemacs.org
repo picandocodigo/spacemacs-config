@@ -122,13 +122,15 @@ Spacemacs uses a leader key to bind almost all its key bindings. In Vim mode, th
 | ~a m t~         | run tests under cursor            |
 
 ** Projectile
-| Key combination | Description               |
-|-----------------+---------------------------|
-| ~p I~           | Invalidate cache          |
-| ~s a p~         | Find pattern (in project) |
-| ~p f~           | Find file (in project)    |
-| ~p p~           | Open project              |
-| ~p R~           | Replace in project        |
+| Key combination | Description                           |
+|-----------------+---------------------------------------|
+| ~p p~           | Open project                          |
+| ~p P~           | Switch to project                     |
+| ~p I~           | Invalidate cache                      |
+| ~s a p~         | Find pattern (in project)             |
+| ~s a P~         | Find thing under cursor  (in project) |
+| ~p f~           | Find file (in project)                |
+| ~p R~           | Replace in project                    |
 * Emacs functions
 ~describe-variable~ - See the value of a variable
 
