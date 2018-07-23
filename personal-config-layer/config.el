@@ -18,7 +18,13 @@
 (setq ruby-insert-encoding-magic-comment nil)
 (setq enh-ruby-add-encoding-comment-on-save nil)
 
-
+;; Fuzzy search in helm
+(setq helm-mode-fuzzy-match t)
+(setq helm-completion-in-region-fuzzy-match t)
 
 ;; Go
 (setq gofmt-command "goimports")
+
+;; Always start a server:
+(require 'server)
+(unless (server-running-p) (server-start))
