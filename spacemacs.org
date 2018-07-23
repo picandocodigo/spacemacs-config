@@ -52,12 +52,13 @@ Spacemacs uses a leader key to bind almost all its key bindings. In Vim mode, th
 | ~M-g g~ | Go to line  |
 
 ** Spacemacs shortcuts
-| Keys  | Description                                                                 |
-|-------+-----------------------------------------------------------------------------|
-| ~f y~ | Show and copy current file path                                             |
-| ~f r~ | Recent files                                                                |
-| ~x y~ | Copy selection to clipboard (even in terminal, thanks to `xclipboard` layer |
-| ~x p~ | Paste clipboard contents at cursor position (same ☝️)                        |
+| Keys    | Description                                                                 |
+|---------+-----------------------------------------------------------------------------|
+| ~f y y~ | Show and copy current file path                                             |
+| ~f y Y~ | Projectile copy file path                                                   |
+| ~f r~   | Recent files                                                                |
+| ~x y~   | Copy selection to clipboard (even in terminal, thanks to `xclipboard` layer |
+| ~x p~   | Paste clipboard contents at cursor position (same ☝️)                        |
 
 
 ** Magit
@@ -131,6 +132,10 @@ Spacemacs uses a leader key to bind almost all its key bindings. In Vim mode, th
 | ~s a P~         | Find thing under cursor  (in project) |
 | ~p f~           | Find file (in project)                |
 | ~p R~           | Replace in project                    |
+| ~p b~           | Buffer list (for project files)       |
+| ~p r~           | Open recent file                      |
+|                 |                                       |
+
 * Emacs functions
 ~describe-variable~ - See the value of a variable
 
