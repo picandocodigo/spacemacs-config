@@ -68,3 +68,12 @@
   (next-line 1)
   (yank)
   )
+
+;; Require byebug
+(defun add-byebug()
+  (interactive)
+  (beginning-of-line)
+  (insert "require 'byebug'; byebug")
+  (indent-according-to-mode)
+  (newline-and-indent)
+  )

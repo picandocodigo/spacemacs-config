@@ -17,3 +17,5 @@
 ;; Kill
 (global-set-key (kbd "C-c q") 'delete-frame)
 
+;; Add byebug
+(global-set-key (kbd "C-c y")'add-byebug)
