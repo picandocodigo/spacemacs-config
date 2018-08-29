@@ -30,3 +30,6 @@
 ;; Always start a server:
 (require 'server)
 (unless (server-running-p) (server-start))
+
+;; Emojify (show emojis)
+(add-hook 'after-init-hook #'global-emojify-mode)
