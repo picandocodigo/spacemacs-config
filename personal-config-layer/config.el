@@ -33,3 +33,5 @@
 
 ;; Emojify (show emojis)
 (add-hook 'after-init-hook #'global-emojify-mode)
+
+(setq neo-theme 'icons)

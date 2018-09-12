@@ -11,7 +11,7 @@
 - [[#key-bindings][Key bindings]]
 
 * Description
-This layer adds support for some custom stuff on top of Cultivate's shared config.
+This layer adds support for some custom stuff on top of [[https://github.com/CultivateHQ/cultivate_shared_config][Cultivate's shared config]].
 
 ** Features:
   - Emojify
