@@ -6,3 +6,4 @@
 (configuration-layer/declare-layer 'go)
 (configuration-layer/declare-layer 'xclipboard)
 (configuration-layer/declare-layer 'protobuf)
+;(configuration-layer/declare-layer 'lsp)

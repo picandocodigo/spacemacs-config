@@ -1,5 +1,6 @@
 ;;; Set emacs mode as default
 (setq dotspacemacs-editing-style 'emacs)
+(setq dotspacemacs-mode-line-theme 'spacemacs)
 
 ;;; ORG MODE
 (add-hook 'magit-mode-hook 'visual-line-mode)
@@ -26,6 +27,7 @@
 (setq go-format-before-save t)
 (setq gofmt-command "goimports")
 (setq go-tab-width 4)
+;(setq go-backend 'lsp)
 
 ;; Always start a server:
 (require 'server)
@@ -35,3 +37,7 @@
 (add-hook 'after-init-hook #'global-emojify-mode)
 
 (setq neo-theme 'icons)
+
+;; Treemacs
+(setq treemacs :variables treemacs-use-follow-mode t)
+(setq treemacs :variables treemacs-use-filewatch-mode t)
