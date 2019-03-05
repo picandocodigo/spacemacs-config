@@ -34,6 +34,19 @@ Spacemacs uses a leader key to bind almost all its key bindings. In Vim mode, th
 | ~0~        | Open treemacs in the current directory                                                                                 |
 | ~f t~      | Hide/show existing treemacs, create one for current directory if no buffer exists                                      |
 
+*** GUI Toggles
+
+| Keys    | Description                                               |
+|---------+-----------------------------------------------------------|
+| ~t~     | The main "toggles" key, see sub-toggles with meta key - t |
+| ~t h i~ | Highlight indentation                                     |
+| ~t h c~ | Highlight indentation for current column                  |
+| ~t 8~   | Highlight characters for long lines                       |
+| ~t w~   | Whitespace mode!                                          |
+| ~t a~   | autocompletion                                            |
+| ~t s~   | syntax checking                                           |
+
+
 ** Projectile
 | Key combination | Description                           |
 |-----------------+---------------------------------------|
