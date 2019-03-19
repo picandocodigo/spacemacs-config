@@ -16,24 +16,27 @@
 
 ** Spacemacs shortcuts
 Spacemacs uses a leader key to bind almost all its key bindings. In Vim mode, the leader key is set on ~SPC~ (the space bar, hence the name spacemacs). In Emacs style the leader is available on ~M-m~. So shortcuts with ~SPC~ can be executed with ~M-m~ in Emacs mode.
-| Keys       | Description                                                                                                            |
-|------------+------------------------------------------------------------------------------------------------------------------------|
-| ~f y y~    | Show and copy current file path                                                                                        |
-| ~f y Y~    | Projectile copy file path                                                                                              |
-| ~f r~      | Recent files                                                                                                           |
-| ~x y~      | Copy selection to clipboard (even in terminal, thanks to the ~xclipboard~ layer)                                       |
-| ~x p~      | Paste clipboard contents at cursor position (same ☝️)                                                                 |
-| ~x a char~ | Align to char, e.g.: ~:~                                                                                               |
-| ~tab~      | Toggle last buffer                                                                                                     |
-| ~s s~      | "swoop" (search in file with menu for navigating)                                                                      |
-| ~m g g~    | Go to definition (mode -> g g )                                                                                        |
-| ~C-x b~    | Kill buffers in Helm Buffer - ~C-x b~ shows helm buffer, select buffers to kill with ~Ctrl-SPC~, kill them with ~M-D~. |
-| ~f D~      | delete a file and associated buffer                                                                                    |
-| ~f R~      | Rename current file                                                                                                    |
-| ~f b~      | Open bookmarks                                                                                                         |
-| ~0~        | Open treemacs in the current directory                                                                                 |
-| ~f t~      | Hide/show existing treemacs, create one for current directory if no buffer exists                                      |
-| ~z x~      | - / + change font size                                                                                                 |
+| Keys          | Description                                                                                                            |
+|---------------+------------------------------------------------------------------------------------------------------------------------|
+| ~f y y~       | Show and copy current file path                                                                                        |
+| ~f y Y~       | Projectile copy file path                                                                                              |
+| ~f r~         | Recent files                                                                                                           |
+| ~x y~         | Copy selection to clipboard (even in terminal, thanks to the ~xclipboard~ layer)                                       |
+| ~x p~         | Paste clipboard contents at cursor position (same ☝️)                                                                 |
+| ~x a char~    | Align to char, e.g.: ~:~                                                                                               |
+| ~tab~         | Toggle last buffer                                                                                                     |
+| ~s s~         | "swoop" (search in file with menu for navigating)                                                                      |
+| ~m g g~       | Go to definition (mode -> g g )                                                                                        |
+| ~C-x b~       | Kill buffers in Helm Buffer - ~C-x b~ shows helm buffer, select buffers to kill with ~Ctrl-SPC~, kill them with ~M-D~. |
+| ~f D~         | delete a file and associated buffer                                                                                    |
+| ~f R~         | Rename current file                                                                                                    |
+| ~f b~         | Open bookmarks                                                                                                         |
+| ~0~           | Open treemacs in the current directory                                                                                 |
+| ~f t~         | Hide/show existing treemacs, create one for current directory if no buffer exists                                      |
+| ~z x~         | - / + change font size                                                                                                 |
+| ~f b~         | Open bookmarks (write name and enter to save current buffer as bookmark)                                               |
+| ~C-c C-e h o~ | In org-mode, export to html and open html file in browser                                                              |
+
 
 *** GUI Toggles
 
@@ -46,7 +49,6 @@ Spacemacs uses a leader key to bind almost all its key bindings. In Vim mode, th
 | ~t w~   | Whitespace mode!                                          |
 | ~t a~   | autocompletion                                            |
 | ~t s~   | syntax checking                                           |
-
 
 ** Projectile
 | Key combination | Description                           |
@@ -61,12 +63,6 @@ Spacemacs uses a leader key to bind almost all its key bindings. In Vim mode, th
 | ~p f~           | Replace in project                    |
 | ~p b~           | Buffer list (for project files)       |
 | ~p r~           | Open recent file                      |
-
-** Neotree
-| Key combination | Description    |
-|-----------------+----------------|
-| ~0~             | Focus nt       |
-| ~g r~           | refresh a node |
 
 ** Magit
 | Key combination       | Description                                                              |
