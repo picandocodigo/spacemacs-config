@@ -36,7 +36,9 @@ Spacemacs uses a leader key to bind almost all its key bindings. In Vim mode, th
 | ~z x~         | - / + change font size                                                                                                 |
 | ~f b~         | Open bookmarks (write name and enter to save current buffer as bookmark)                                               |
 | ~C-c C-e h o~ | In org-mode, export to html and open html file in browser                                                              |
-
+| ~; ;~         | Toggle comment/uncomment line                                                                                          |
+| ~; i p~       | Comment whole paragraph, or any other movement) to toggle line (or region) comment / uncomment.                        |
+| ~c y~         | Comments a line and makes a copy right below it.                                                                       |
 
 *** GUI Toggles
 
@@ -94,7 +96,7 @@ Spacemacs uses a leader key to bind almost all its key bindings. In Vim mode, th
 | Key binding | Description                                                  |
 |-------------+--------------------------------------------------------------|
 | ~e c~       | clear errors                                                 |
-| ~e h~       |   describe flycheck checker                                  |
+| ~e h~       | describe flycheck checker                                    |
 | ~e l~       | display a list of all the errors                             |
 | ~e L~       | display a list of all the errors and focus the errors buffer |
 | ~e e~       | explain the error at point                                   |
