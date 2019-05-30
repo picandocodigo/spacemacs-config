@@ -13,7 +13,7 @@
 (add-hook 'org-mode-hook 'visual-line-mode)
 
 ;;; THEME
-(spacemacs/load-theme 'wombat)
+(spacemacs/load-theme 'deeper-blue)
 (setq auto-window-vscroll nil)
 
 (setq ruby-insert-encoding-magic-comment nil)

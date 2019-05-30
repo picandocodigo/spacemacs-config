@@ -6,13 +6,15 @@
 
 ** Emacs shortcuts
 ~M~ stands for ~Meta key~ (generally Alt), and ~C~ stands for the Ctrl key.
-| Keys    | Description                                                    |
-|---------+----------------------------------------------------------------|
-| ~M-g g~ | Go to line                                                     |
-| ~M-^~   | Join lines                                                     |
-| ~C->~   | Multi line cursor add next line                                |
-| ~C-<~   | Multi line cursor add previous line                            |
-| ~M =~   | Show information about lines, words and characters in a region |
+| Keys        | Description                                                    |
+|-------------+----------------------------------------------------------------|
+| ~M-g g~     | Go to line                                                     |
+| ~M-^~       | Join lines                                                     |
+| ~C->~       | Multi line cursor add next line                                |
+| ~C-<~       | Multi line cursor add previous line                            |
+| ~M =~       | Show information about lines, words and characters in a region |
+| ~C-x s~     | save-some-buffers: Save open buffers                           |
+| ~C-u C-x s~ | Save all open buffers without asking                           |
 
 ** Spacemacs shortcuts
 Spacemacs uses a leader key to bind almost all its key bindings. In Vim mode, the leader key is set on ~SPC~ (the space bar, hence the name spacemacs). In Emacs style the leader is available on ~M-m~. So shortcuts with ~SPC~ can be executed with ~M-m~ in Emacs mode.
@@ -62,7 +64,7 @@ Spacemacs uses a leader key to bind almost all its key bindings. In Vim mode, th
 | ~s a d~         | Search in directory                   |
 | ~s a P~         | Find thing under cursor  (in project) |
 | ~p f~           | Find file (in project)                |
-| ~p f~           | Replace in project                    |
+| ~p R~           | Replace in project                    |
 | ~p b~           | Buffer list (for project files)       |
 | ~p r~           | Open recent file                      |
 
