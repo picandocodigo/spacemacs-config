@@ -41,3 +41,6 @@
 ;; Treemacs
 (setq treemacs :variables treemacs-use-follow-mode t)
 (setq treemacs :variables treemacs-use-filewatch-mode t)
+
+;; Helm buffers
+(setq helm-buffer-max-length nil)
