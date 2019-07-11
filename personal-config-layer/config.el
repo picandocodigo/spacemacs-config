@@ -8,8 +8,6 @@
 ;; Use visual line mode to wrap text in screen space:
 (add-hook 'org-mode-hook 'visual-line-mode)
 
-;;; THEME
-(spacemacs/load-theme 'doom-opera)
 (setq auto-window-vscroll nil)
 
 ;;;; Ruby
