@@ -5,9 +5,24 @@ Personal config file, private layer, notes and any other resources for [Spacemac
 More info:
 http://www.cultivatehq.com/posts/spacemacs-shared-config/
 
-## Using the private layer:
+## Install:
+Create a symlink from your home directory to the dotfile:
 
-Add a symlink to `personal-config-layer` in `~/.emacs.d/private` and then add the private layer to the `.spacemacs` file:
+```
+$ cd ~
+$ ln -s path/to/spacemacs-config/dotfile .spacemacs
+```
+
+### Using the private layer:
+
+Add a symlink to `personal-config-layer` in `~/.emacs.d/private`:
+
+```
+$ cd ~/.emacs.d/private/
+ln -s path/to/spacemacs-config/personal-config-layer
+```
+
+Add the private layer to the `.spacemacs` file (if you're using this repo's dotfile, it's already there):
 
 ```elisp
    ;; List of configuration layers to load.
@@ -18,8 +33,7 @@ Add a symlink to `personal-config-layer` in `~/.emacs.d/private` and then add th
         )
 ```
 
-
-## Using the config file:
+### Using the config file:
 
 Link personal-config.el in the home directory:
 
