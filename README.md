@@ -47,3 +47,8 @@ And add this code to `~/.spacemacs`:
   (load-file "~/.personal-config.el")
   )
 ```
+
+## Post install:
+
+Run:
+- `all-the-icons-install-fonts`
