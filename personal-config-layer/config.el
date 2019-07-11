@@ -39,3 +39,22 @@
 
 ;; Helm buffers
 (setq helm-buffer-max-length nil)
+
+(setq
+ web-mode-attr-indent-offset 2
+ web-mode-code-indent-offset 2
+ web-mode-css-indent-offset 2
+ web-mode-enable-auto-indentation t
+ web-mode-indent-style 2
+ web-mode-scss-indent-offset 2
+ web-mode-markup-indent-offset 2
+ css-indent-offset 2
+ ruby-insert-encoding-magic-comment nil
+ enh-ruby-add-encoding-comment-on-save nil
+ js-indent-level 2
+ js2-basic-offset 2
+ js2-indent-switch-body t
+ js2-mode-show-parse-errors nil
+ js2-mode-show-strict-warnings nil
+ editorconfig-mode 1
+ )

@@ -4,4 +4,5 @@
 (configuration-layer/declare-layer 'ruby-on-rails)
 (configuration-layer/declare-layer 'go)
 (configuration-layer/declare-layer 'protobuf)
+(configuration-layer/declare-layer 'crystal)
 ;(configuration-layer/declare-layer 'lsp)
