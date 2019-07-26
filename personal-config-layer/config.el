@@ -58,3 +58,6 @@
  js2-mode-show-strict-warnings nil
  editorconfig-mode 1
  )
+
+;; Re-builder
+(setq reb-re-syntax 'string)
