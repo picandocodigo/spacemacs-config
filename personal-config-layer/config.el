@@ -57,7 +57,13 @@
  js2-mode-show-parse-errors nil
  js2-mode-show-strict-warnings nil
  editorconfig-mode 1
+ indent-tabs-mode nil
+ tab-width 2
+ c-basic-offset 2
  )
 
 ;; Re-builder
 (setq reb-re-syntax 'string)
+
+;; PHP Mode 2 spaces indent:
+(add-hook 'php-mode-hook #'(lambda() (setq c-basic-offset 2)))
