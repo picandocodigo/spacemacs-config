@@ -9,4 +9,6 @@ git checkout develop
 echo "Setting up personal config files"
 echo
 ln -s $DIR/dotfile ~/.spacemacs
-ln -s $DIR/personal-config-layer ~/.emacs.d/private
+ln -s $DIR/personal-config-layer ~/.emacs.d/private/personal-config
+
+echo "All Done"
