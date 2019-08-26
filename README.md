@@ -6,7 +6,14 @@ More info:
 http://www.cultivatehq.com/posts/spacemacs-shared-config/
 
 ## Install:
+Install Spacemacs:
+
+```
+$ git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 Create a symlink from your home directory to the dotfile:
+```
+
+Create symlink:
 
 ```
 $ cd ~
