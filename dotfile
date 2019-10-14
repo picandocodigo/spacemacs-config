@@ -51,7 +51,7 @@ This function should only modify configuration layer settings."
      multiple-cursors
      org
      personal-config
-     syntax-checking
+     (syntax-checking :variables syntax-checking-enable-tooltips 1)
      treemacs
      version-control
      xclipboard
