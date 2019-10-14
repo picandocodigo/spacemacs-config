@@ -67,3 +67,6 @@
 
 ;; PHP Mode 2 spaces indent:
 (add-hook 'php-mode-hook #'(lambda() (setq c-basic-offset 2)))
+
+;; Always follow symlinks:
+(setq vc-follow-symlinks t)
