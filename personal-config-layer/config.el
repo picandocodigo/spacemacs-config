@@ -7,6 +7,12 @@
 (setq org-startup-indented t)
 ;; Use visual line mode to wrap text in screen space:
 (add-hook 'org-mode-hook 'visual-line-mode)
+(setq org-todo-keywords
+      '(
+        (sequence "TODO(t)" "MAYBE(m)" "|" "DONE(d)")
+        (sequence "REPORT(r)" "BUG(b)" "KNOWNCAUSE(k)" "|" "FIXED(f)")
+        )
+      )
 
 (setq auto-window-vscroll nil)
 
