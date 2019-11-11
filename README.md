@@ -10,10 +10,11 @@ Install Spacemacs:
 
 ```
 $ git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
-Create a symlink from your home directory to the dotfile:
+$ cd ~/.emacs.d
+$ git co develop
 ```
 
-Create symlink:
+Create a symlink from your home directory to the dotfile:
 
 ```
 $ cd ~
