@@ -154,12 +154,12 @@ With a prefix ARG always prompt for command to use."
 * Org Mode
 Write "<s" and press Tab to start a source code block.
 
- - /italicised text/
- - *bold text*
- - _underlines_
- - =literal text=
- - ~code~
-
+- /italicised text/
+- *bold text*
+- _underlines_
+- =literal text=
+- ~code~
+- +strikethrough+
 * Emacs functions
 ~describe-variable~ - See the value of a variable
 

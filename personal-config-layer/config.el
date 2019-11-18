@@ -9,7 +9,7 @@
 (add-hook 'org-mode-hook 'visual-line-mode)
 (setq org-todo-keywords
       '(
-        (sequence "TODO(t)" "MAYBE(m)" "|" "DONE(d)")
+        (sequence "TODO(t)" "MAYBE(m)" "IN PROGRESS(p)" "|" "DONE(d)")
         (sequence "REPORT(r)" "BUG(b)" "KNOWNCAUSE(k)" "|" "FIXED(f)")
         )
       )
