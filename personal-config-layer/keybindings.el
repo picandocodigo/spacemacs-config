@@ -1,5 +1,6 @@
 (global-set-key (kbd "C-h") 'delete-backward-char)
 (global-set-key (kbd "M-h") 'backward-kill-word)
+(global-set-key (kbd "M-=")'count-words)
 
 ;; Move Region
 (global-set-key (kbd "M-p") 'move-region-up)
