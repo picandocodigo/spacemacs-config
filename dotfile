@@ -41,6 +41,7 @@ This function should only modify configuration layer settings."
      ;; ----------------------------------------------------------------
      (auto-completion :variables
                       auto-completion-enable-snippets-in-popup t)
+     asciidoc
      elixir
      emacs-lisp
      git
@@ -56,6 +57,7 @@ This function should only modify configuration layer settings."
      version-control
      xclipboard
      yaml
+     es-mode
      (ruby :variables
            ruby-test-runner 'rspec
            ruby-enable-enh-ruby-mode t

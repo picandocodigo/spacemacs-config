@@ -35,7 +35,7 @@
 (unless (server-running-p) (server-start))
 
 ;; Emojify (show emojis)
-(add-hook 'after-init-hook #'global-emojify-mode)
+(add-hook 'after-init-hook 'global-emojify-mode)
 
 (setq neo-theme 'icons)
 
