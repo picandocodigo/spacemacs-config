@@ -19,4 +19,7 @@
 (global-set-key (kbd "C-c q") 'delete-frame)
 
 ;; Add byebug
-(global-set-key (kbd "C-c y")'add-byebug)
+(global-set-key (kbd "C-c y") 'add-byebug)
+
+;; Code folding
+(global-set-key (kbd "C-c f") 'evil-toggle-fold)
