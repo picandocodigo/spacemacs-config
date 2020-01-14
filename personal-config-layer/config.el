@@ -35,6 +35,7 @@
 (unless (server-running-p) (server-start))
 
 ;; Emojify (show emojis)
+(setq emojify-inhibit-major-modes '(json-mode))
 (add-hook 'after-init-hook 'global-emojify-mode)
 
 (setq neo-theme 'icons)
