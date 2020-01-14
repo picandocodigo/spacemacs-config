@@ -77,3 +77,12 @@
   (indent-according-to-mode)
   (newline-and-indent)
   )
+
+;; start ruby-asciidoc
+(defun rubyascii()
+  (interactive)
+  (beginning-of-line)
+  (insert "[source, ruby]\n----\n----")
+  (indent-according-to-mode)
+  (newline-and-indent)
+  )
