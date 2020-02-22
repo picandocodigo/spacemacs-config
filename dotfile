@@ -57,7 +57,7 @@ This function should only modify configuration layer settings."
      version-control
      xclipboard
      yaml
-     es-mode
+     elasticsearch
      (ruby :variables
            ruby-test-runner 'rspec
            ruby-enable-enh-ruby-mode t
