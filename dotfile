@@ -493,6 +493,9 @@ before packages are loaded."
   ;; This fixes the issue where '<s' wouldn't autocomplete in org-mode
   ;;https://github.com/syl20bnr/spacemacs/issues/11798
   (require 'org-tempo)
+  (load-file "~/.emacs.d/private/helm-treemacs-icons/helm-treemacs-icons.el")
+  (require 'helm-treemacs-icons)
+  (helm-treemacs-icons-enable)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
