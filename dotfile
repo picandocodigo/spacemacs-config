@@ -80,6 +80,7 @@ This function should only modify configuration layer settings."
    dotspacemacs-additional-packages '(
                                       doom-themes
                                       all-the-icons
+                                      helm-icons
                                       )
 
    ;; A list of packages that cannot be updated.
@@ -493,9 +494,9 @@ before packages are loaded."
   ;; This fixes the issue where '<s' wouldn't autocomplete in org-mode
   ;;https://github.com/syl20bnr/spacemacs/issues/11798
   (require 'org-tempo)
-  (load-file "~/.emacs.d/private/helm-treemacs-icons/helm-treemacs-icons.el")
-  (require 'helm-treemacs-icons)
-  (helm-treemacs-icons-enable)
+
+  ;; Helm-icons:
+  (helm-icons-enable)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
