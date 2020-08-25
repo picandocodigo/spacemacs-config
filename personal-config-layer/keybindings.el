@@ -20,6 +20,8 @@
 
 ;; Add byebug
 (global-set-key (kbd "C-c y") 'add-byebug)
+;; Add binding.pry
+(global-set-key (kbd "C-c b") 'add-binding-pry)
 
 ;; Code folding
 (global-set-key (kbd "C-c f") 'evil-toggle-fold)

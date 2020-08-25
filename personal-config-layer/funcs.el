@@ -78,6 +78,15 @@
   (newline-and-indent)
   )
 
+;; Add binding.pry
+(defun add-binding-pry()
+  (interactive)
+  (beginning-of-line)
+  (insert "binding.pry")
+  (indent-according-to-mode)
+  (newline-and-indent)
+  )
+
 ;; start ruby-asciidoc
 (defun rubyascii()
   (interactive)

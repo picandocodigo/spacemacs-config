@@ -129,6 +129,11 @@ Spacemacs uses a leader key to bind almost all its key bindings. In Vim mode, th
 | ~a m t b~       | run tests on current buffer       |
 | ~a m t~         | run tests under cursor            |
 
+** Ruby
+| Keys        | Description             |
+|-------------+-------------------------|
+| ~M-RET x h~ | Toggle Ruby hash syntax |
+
 * Functions
 
 "Open with", open file in buffer with external app.
