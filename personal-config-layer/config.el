@@ -77,3 +77,14 @@
 
 ;; Always follow symlinks:
 (setq vc-follow-symlinks t)
+
+;; Fix for high CPU consumption
+;; https://github.com/syl20bnr/spacemacs/issues/9409
+(setq history-length 100)
+(put 'minibuffer-history 'history-length 50)
+(put 'evil-ex-history 'history-length 50)
+(put 'kill-ring 'history-length 25)
+(savehist-mode -1)
+
+;; Adoc-mode for .asciidoc file extensions
+(add-to-list 'auto-mode-alist '("\\.asciidoc" . adoc-mode))
