@@ -25,3 +25,6 @@
 
 ;; Code folding
 (global-set-key (kbd "C-c f") 'evil-toggle-fold)
+
+;; Indent all
+(global-set-key (kbd "C-c i") 'indent-all)

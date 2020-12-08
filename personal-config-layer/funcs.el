@@ -95,3 +95,12 @@
   (indent-according-to-mode)
   (newline-and-indent)
   )
+
+;; Indent region in entire file
+(defun indent-all()
+  (interactive)
+  (save-excursion
+    (mark-whole-buffer)
+    (indent-region (region-beginning) (region-end))
+    )
+  )
