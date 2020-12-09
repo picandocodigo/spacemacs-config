@@ -2,7 +2,7 @@
 
 ;;; ORG MODE
 ;; Add hook for doing this on every org file:
-(add-hook 'org-mode-hook 'org-html-export-on-save)
+;; (add-hook 'org-mode-hook 'org-html-export-on-save)
 ;; Enable `org-indent-mode' by default
 (setq org-startup-indented t)
 ;; Use visual line mode to wrap text in screen space:

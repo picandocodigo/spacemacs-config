@@ -28,3 +28,6 @@
 
 ;; Indent all
 (global-set-key (kbd "C-c i") 'indent-all)
+
+;; Comment line insted of realign
+(global-set-key (kbd "M-;") 'comment-line)
