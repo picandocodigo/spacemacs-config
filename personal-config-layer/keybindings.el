@@ -31,3 +31,6 @@
 
 ;; Comment line insted of realign
 (global-set-key (kbd "M-;") 'comment-line)
+
+;; Increment number at point
+(global-set-key (kbd "C-c +") 'increment-number-at-point)
