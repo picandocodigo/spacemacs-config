@@ -88,3 +88,25 @@
 
 ;; Adoc-mode for .asciidoc file extensions
 (add-to-list 'auto-mode-alist '("\\.asciidoc" . adoc-mode))
+
+;; Ruby code folding
+(add-hook 'ruby-mode-hook
+          (lambda () (hs-minor-mode)))
+
+(eval-after-load "hideshow"
+  '(add-to-list 'hs-special-modes-alist
+                `(ruby-mode
+                  ,(rx (or "def" "class" "module" "do" "{" "[")) ; Block start
+                  ,(rx (or "}" "]" "end"))                       ; Block end
+                  ,(rx (or "#" "=begin"))                        ; Comment start
+                  ruby-forward-sexp nil)))
+
+(global-set-key (kbd "C-c h g") 'hs-hide-block)
+(global-set-key (kbd "C-c h j") 'hs-show-block)
+(global-set-key (kbd "C-c h y") 'hs-hide-level)
+
+;; Default value for auto-fill-mode
+(setq-default fill-column 100)
+
+;; Fix empty directory error
+(setq projectile-git-submodule-command nil)
