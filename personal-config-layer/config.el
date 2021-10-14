@@ -110,3 +110,6 @@
 
 ;; Fix empty directory error
 (setq projectile-git-submodule-command nil)
+
+;; Stop creating .#file files
+(setq create-lockfiles nil)
