@@ -113,3 +113,6 @@
 
 ;; Stop creating .#file files
 (setq create-lockfiles nil)
+
+;; Stop creating ~undo-tree~ all over the place
+(setq undo-tree-auto-save-history nil)
