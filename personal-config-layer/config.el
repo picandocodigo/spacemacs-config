@@ -24,12 +24,6 @@
 (setq helm-mode-fuzzy-match t)
 (setq helm-completion-in-region-fuzzy-match t)
 
-;; Go
-(setq go-format-before-save t)
-(setq gofmt-command "goimports")
-(setq go-tab-width 4)
-;(setq go-backend 'lsp)
-
 ;; Always start a server:
 (require 'server)
 (unless (server-running-p) (server-start))
