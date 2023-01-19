@@ -61,13 +61,13 @@
  indent-tabs-mode nil
  tab-width 2
  c-basic-offset 2
+ sh-basic-offset 2
  )
+;; PHP Mode 2 spaces indent:
+(add-hook 'php-mode-hook #'(lambda() (setq c-basic-offset 2)))
 
 ;; Re-builder
 (setq reb-re-syntax 'string)
-
-;; PHP Mode 2 spaces indent:
-(add-hook 'php-mode-hook #'(lambda() (setq c-basic-offset 2)))
 
 ;; Always follow symlinks:
 (setq vc-follow-symlinks t)
