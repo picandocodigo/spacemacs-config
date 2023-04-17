@@ -52,17 +52,12 @@ This function should only modify configuration layer settings."
      multiple-cursors
      org
      personal-config
-     (syntax-checking :variables syntax-checking-enable-tooltips 1)
      treemacs
      version-control
      xclipboard
      yaml
      elasticsearch
-     (ruby :variables
-           ruby-test-runner 'rspec
-           ruby-enable-enh-ruby-mode t
-           ruby-backend 'lsp
-           )
+     docker
      ;; (shell :variables
      ;;        shell-default-height 30
      ;;        shell-default-position 'bottom)
@@ -87,7 +82,8 @@ This function should only modify configuration layer settings."
    dotspacemacs-frozen-packages '()
 
    ;; A list of packages that will not be installed and loaded.
-   dotspacemacs-excluded-packages '(doom-Iosvkem-theme
+   dotspacemacs-excluded-packages '(doom-wilmersdorf
+                                    doom-Iosvkem-theme
                                     doom-outrun-electric)
 
    ;; Defines the behaviour of Spacemacs when installing packages.
@@ -210,9 +206,11 @@ It should only modify the values of Spacemacs settings."
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press `SPC T n' to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
-   dotspacemacs-themes '(curry-on
-                         doom-Iosvkem
+   dotspacemacs-themes '(
+                         curry-on
                          doom-outrun-electric
+                         doom-wilmersdorf
+                         doom-Iosvkem
                          spacemacs-dark
                          )
 
@@ -223,7 +221,7 @@ It should only modify the values of Spacemacs settings."
    ;; refer to the DOCUMENTATION.org for more info on how to create your own
    ;; spaceline theme. Value can be a symbol or list with additional properties.
    ;; (default '(spacemacs :separator wave :separator-scale 1.5))
-   dotspacemacs-mode-line-theme '(doom :separator wave :separator-scale 1.5)
+   dotspacemacs-mode-line-theme '(all-the-icons :separator wave :separator-scale 1.5)
 
    ;; If non-nil the cursor color matches the state color in GUI Emacs.
    ;; (default t)
@@ -460,7 +458,7 @@ It should only modify the values of Spacemacs settings."
    ;; Run `spacemacs/prettify-org-buffer' when
    ;; visiting README.org files of Spacemacs.
    ;; (default nil)
-   dotspacemacs-pretty-docs nil))
+   dotspacemacs-pretty-docs t))
 
 (defun dotspacemacs/user-env ()
   "Environment variables setup.

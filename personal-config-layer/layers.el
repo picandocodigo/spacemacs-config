@@ -3,4 +3,3 @@
 (configuration-layer/declare-layer 'python)
 (configuration-layer/declare-layer 'ruby-on-rails)
 (configuration-layer/declare-layer 'crystal)
-;(configuration-layer/declare-layer 'lsp)

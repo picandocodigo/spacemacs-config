@@ -18,10 +18,11 @@
 ;; Kill
 (global-set-key (kbd "C-c q") 'delete-frame)
 
+;;:::::::::::::::RUBY DEBUGGERS:::::::::::::::;;
 ;; Add byebug
 (global-set-key (kbd "C-c y") 'add-byebug)
-;; Add binding.pry
-(global-set-key (kbd "C-c b") 'add-binding-pry)
+;; Add binding.break (ruby-debug)
+(global-set-key (kbd "C-c b") 'add-binding-break)
 
 ;; Code folding
 (global-set-key (kbd "C-c f") 'evil-toggle-fold)
@@ -34,3 +35,9 @@
 
 ;; Increment number at point
 (global-set-key (kbd "C-c +") 'increment-number-at-point)
+
+;; Resize windows
+(global-set-key (kbd "S-C-<left>") 'shrink-window-horizontally)
+(global-set-key (kbd "S-C-<right>") 'enlarge-window-horizontally)
+(global-set-key (kbd "S-C-<down>") 'shrink-window)
+(global-set-key (kbd "S-C-<up>") 'enlarge-window)

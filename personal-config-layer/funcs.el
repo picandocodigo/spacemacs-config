@@ -78,11 +78,11 @@
   (newline-and-indent)
   )
 
-;; Add binding.pry
-(defun add-binding-pry()
+;; Add binding.break
+(defun add-binding-break()
   (interactive)
   (beginning-of-line)
-  (insert "binding.pry")
+  (insert "require 'debug'; binding.break")
   (indent-according-to-mode)
   (newline-and-indent)
   )
