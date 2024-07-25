@@ -39,9 +39,8 @@ This function should only modify configuration layer settings."
      ;; Uncomment some layer names and press `SPC f e R' (Vim style) or
      ;; `M-m f e R' (Emacs style) to install them.
      ;; ----------------------------------------------------------------
-     (auto-completion :variables
-                      auto-completion-enable-snippets-in-popup t)
      asciidoc
+     (auto-completion :variables  auto-completion-enable-snippets-in-popup t)
      elixir
      emacs-lisp
      git
@@ -50,19 +49,19 @@ This function should only modify configuration layer settings."
      javascript
      markdown
      multiple-cursors
-     org
      personal-config
-     treemacs
      version-control
+     neotree
      xclipboard
      yaml
-     elasticsearch
      docker
+     (ruby :variables ruby-version-manager 'rvm)
      ;; (shell :variables
      ;;        shell-default-height 30
      ;;        shell-default-position 'bottom)
-     ;; spell-checking
      ;; better-defaults
+     typescript
+     syntax-checking
      )
 
    ;; List of additional packages that will be installed without being
@@ -73,9 +72,11 @@ This function should only modify configuration layer settings."
    ;; '(your-package :location "~/path/to/your-package/")
    ;; Also include the dependencies as they will not be resolved automatically.
    dotspacemacs-additional-packages '(
+                                      ef-themes
                                       doom-themes
                                       all-the-icons
                                       helm-icons
+                                      breadcrumb
                                       )
 
    ;; A list of packages that cannot be updated.
@@ -207,6 +208,7 @@ It should only modify the values of Spacemacs settings."
    ;; Press `SPC T n' to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
    dotspacemacs-themes '(
+                         ef-bio
                          curry-on
                          doom-outrun-electric
                          doom-wilmersdorf
