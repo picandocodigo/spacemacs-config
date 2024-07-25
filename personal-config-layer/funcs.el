@@ -15,17 +15,6 @@
                     (shell-quote-argument buffer-file-name)))))
 (global-set-key (kbd "C-c o") 'open-with)
 
-;;; Org-mode
-;;; Export org files to html on save:
-(defun org-html-export-on-save ()
-  (interactive)
-  (if (memq 'org-html-export-to-html after-save-hook)
-      (progn
-        (remove-hook 'after-save-hook 'org-html-export-to-html t)
-        (message "Disabled org html export on save for current buffer..."))
-    (add-hook 'after-save-hook 'org-html-export-to-html nil t)
-    (message "Enabled org html export on save for current buffer...")))
-
 ;;; Move regions. Originally in:
 ;;; https://github.com/picandocodigo/emacs-config/blob/master/.emacs.d/packages/move-region.el
 ;;; Should find original source
@@ -56,7 +45,6 @@
   "Move the current line down by N lines."
   (interactive "r\np")
   (move-region start end (if (null n) 1 n)))
-
 
 ;; Duplicate line
 (defun duplicate-line()
@@ -113,3 +101,9 @@
   (or (looking-at "[0-9]+")
       (error "No number at point"))
   (replace-match (number-to-string (1+ (string-to-number (match-string 0))))))
+
+;; Source: https://www.emacswiki.org/emacs/misc-cmds.el
+(defun revert-buffer-no-confirm ()
+  "Revert buffer without confirmation."
+  (interactive)
+  (revert-buffer :ignore-auto :noconfirm))

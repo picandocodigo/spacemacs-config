@@ -1,18 +1,23 @@
 (add-hook 'magit-mode-hook 'visual-line-mode)
 
-;;; ORG MODE
-;; Add hook for doing this on every org file:
-;; (add-hook 'org-mode-hook 'org-html-export-on-save)
-;; Enable `org-indent-mode' by default
-(setq org-startup-indented t)
-;; Use visual line mode to wrap text in screen space:
-(add-hook 'org-mode-hook 'visual-line-mode)
-(setq org-todo-keywords
-      '(
-        (sequence "TODO(t)" "MAYBE(m)" "IN PROGRESS(p)" "🗄 ARCHIVED(a)" "|" "✅ DONE(d)")
-        (sequence "REPORT(r)" "BUG(b)" "KNOWNCAUSE(k)" "|" "FIXED(f)")
+;; ;;; ORG MODE
+(with-eval-after-load 'org
+  ;; Use visual line mode to wrap text in screen space:
+  (add-hook 'org-mode-hook 'visual-line-mode)
+  (setq org-todo-keywords
+        '(
+          (sequence "TODO(t)" "MAYBE(m)" "IN PROGRESS(p)" "🗄 ARCHIVED(a)" "|" "✅ DONE(d)")
+          (sequence "REPORT(r)" "BUG(b)" "KNOWNCAUSE(k)" "|" "FIXED(f)")
+          )
         )
-      )
+  ;; Add hook for doing this on every org file:
+  ;; (add-hook 'org-mode-hook 'org-html-export-on-save)
+  ;; Enable `org-indent-mode' by default
+  ;;(setq org-startup-indented t)
+  ;; This fixes the issue where '<s' wouldn't autocomplete in org-mode
+  ;;https://github.com/syl20bnr/spacemacs/issues/11798
+  (require 'org-tempo)
+  )
 
 (setq auto-window-vscroll nil)
 
@@ -34,10 +39,6 @@
 
 (setq neo-theme 'icons)
 
-;; Treemacs
-(setq treemacs :variables treemacs-use-follow-mode t)
-(setq treemacs :variables treemacs-use-filewatch-mode t)
-
 ;; Helm buffers
 (setq helm-buffer-max-length nil)
 
@@ -50,8 +51,6 @@
  web-mode-scss-indent-offset 2
  web-mode-markup-indent-offset 2
  css-indent-offset 2
- ruby-insert-encoding-magic-comment nil
- enh-ruby-add-encoding-comment-on-save nil
  js-indent-level 2
  js2-basic-offset 2
  js2-indent-switch-body t

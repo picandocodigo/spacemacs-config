@@ -32,7 +32,6 @@
 (defconst personal-config-packages
   '(
     emojify
-    gruvbox-theme
     fireplace
     )
   "The list of Lisp packages required by the personal-config layer.
@@ -63,6 +62,5 @@ Each entry is either:
         recipe.  See: https://github.com/milkypostman/melpa#recipe-format")
 
 (defun personal-config/init-emojify())
-(defun personal-config/init-gruvbox-theme())
 (defun personal-config/init-fireplace())
 ;;; packages.el ends here
