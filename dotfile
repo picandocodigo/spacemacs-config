@@ -492,10 +492,6 @@ configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
 
-  ;; This fixes the issue where '<s' wouldn't autocomplete in org-mode
-  ;;https://github.com/syl20bnr/spacemacs/issues/11798
-  (require 'org-tempo)
-
   ;; Helm-icons:
   (helm-icons-enable)
   )
