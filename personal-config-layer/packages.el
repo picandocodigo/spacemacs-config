@@ -33,6 +33,7 @@
   '(
     emojify
     fireplace
+    (helm-icons :location (recipe :fetcher github :repo "yyoncho/helm-icons"))
     )
   "The list of Lisp packages required by the personal-config layer.
 
@@ -63,4 +64,5 @@ Each entry is either:
 
 (defun personal-config/init-emojify())
 (defun personal-config/init-fireplace())
+(defun personal-config/init-helm-icons())
 ;;; packages.el ends here

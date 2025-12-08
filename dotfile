@@ -75,7 +75,6 @@ This function should only modify configuration layer settings."
                                       ef-themes
                                       doom-themes
                                       all-the-icons
-                                      helm-icons
                                       breadcrumb
                                       )
 
